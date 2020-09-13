@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import Logo from '@/patterns/Logo'
 import SwitchTheme from '@/patterns/SwitchTheme'
@@ -8,7 +9,11 @@ import { Container } from './styles'
 function AppBar(): React.ReactElement {
   return (
     <Container>
-      <Logo />
+      <Link href="/">
+        <a>
+          <Logo />
+        </a>
+      </Link>
       <SwitchTheme />
     </Container>
   )
