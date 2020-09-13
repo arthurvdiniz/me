@@ -16,21 +16,36 @@ export enum Shadows {
 
 export enum Transitions {
   default = '300ms ease-in-out',
-  cubic = '300ms cubic-bezier(0, 0.8, 0.13, 1)'
+  cubic = '300ms cubic-bezier(0, 0.8, 0.13, 1)',
+  easeInOutQuad = '300ms cubic-bezier(0.455, 0.03, 0.515, 0.955)'
 }
 
-export enum Devices {
-  mobile = '897px',
-  laptop = '1224px',
-  desktop = '1920px'
+export enum Breakpoints {
+  phoneSmall = 320,
+  phone = 376,
+  phablet = 540,
+  tablet = 735,
+  desktop = 1070,
+  desktopMedium = 1280,
+  desktopLarge = 1440
 }
 
 const theme = {
   shadows: Shadows,
   transitions: Transitions,
-  devices: Devices,
+  breakpoints: Breakpoints,
   typography: {
     fontSize: FontSize
+  }
+}
+
+type CommomTheme = typeof theme
+
+export interface Theme extends CommomTheme {
+  colors: {
+    primary: string
+    background: string
+    highlighted: string
   }
 }
 
@@ -51,8 +66,6 @@ export const darkTheme = {
     highlighted: Colors.white
   }
 }
-
-export type Theme = typeof lightTheme | typeof darkTheme
 
 export type WithTheme = {
   theme: Theme

@@ -32,6 +32,14 @@ export default createGlobalStyle<GlobalStyleProps>`
     transition: background-color ${({ theme }) => theme.transitions.default};
   }
 
+  h1, h2, p, span {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  button {
+    background: none;
+  }
+
   img {
     max-width: none;
   }
