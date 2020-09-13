@@ -25,6 +25,7 @@
       "@/patterns/*": ["patterns/*"],
       "@/styled/*": ["styled/*"],
       "@/theme/*": ["theme/*"],
+      "@/layouts/*": ["layouts/*"],
     }
   },
   "include": [
@@ -34,5 +35,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }
