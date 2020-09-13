@@ -20,8 +20,8 @@ export const External = styled.a`
     position: absolute;
     z-index: -1;
     top: 85%;
-    left: -0.2em;
-    right: -0.2em;
+    left: -0.13em;
+    right: -0.13em;
     bottom: 0;
     transition: top ${({ theme }) => theme.transitions.cubic}, background ${({ theme }) => theme.transitions.default};
     background-color: ${({ theme }) => theme.colors.highlighted};
