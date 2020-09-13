@@ -1,6 +1,7 @@
 export enum Colors {
   white = '#FFFFFF',
-  black = '#000000'
+  black = '#000000',
+  transparent = 'rgba(255, 255, 255, 0)'
 }
 
 export enum FontSize {
@@ -17,7 +18,8 @@ export enum Shadows {
 export enum Transitions {
   default = '300ms ease-in-out',
   cubic = '300ms cubic-bezier(0, 0.8, 0.13, 1)',
-  easeInOutQuad = '300ms cubic-bezier(0.455, 0.03, 0.515, 0.955)'
+  easeInOutQuad = '300ms cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+  easeInOutQuadLong = '1.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)'
 }
 
 export enum Breakpoints {
@@ -46,6 +48,7 @@ export interface Theme extends CommomTheme {
     primary: string
     background: string
     highlighted: string
+    transparent: string
   }
 }
 
@@ -54,7 +57,8 @@ export const lightTheme = {
   colors: {
     primary: Colors.black,
     background: Colors.white,
-    highlighted: Colors.black
+    highlighted: Colors.black,
+    transparent: Colors.transparent
   }
 }
 
@@ -63,7 +67,8 @@ export const darkTheme = {
   colors: {
     primary: Colors.white,
     background: Colors.black,
-    highlighted: Colors.white
+    highlighted: Colors.white,
+    transparent: Colors.transparent
   }
 }
 

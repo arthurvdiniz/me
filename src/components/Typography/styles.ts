@@ -19,6 +19,7 @@ export const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.title};
   letter-spacing: 0px;
   line-height: 48px;
+  font-weight: 600;
 `
 
 export const Subtitle = styled.h2`

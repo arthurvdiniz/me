@@ -12,16 +12,16 @@ export const Internal = styled(Link)`
 export const External = styled.a`
   position: relative;
   text-decoration: none;
-  font-weight: 500;
   color: ${({ theme }) => theme.colors.primary};
+  padding: 0 5px;
 
   &::after {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 85%;
-    left: -0.13em;
-    right: -0.13em;
+    top: 95%;
+    left: 0;
+    right: 0;
     bottom: 0;
     transition: top ${({ theme }) => theme.transitions.cubic}, background ${({ theme }) => theme.transitions.default};
     background-color: ${({ theme }) => theme.colors.highlighted};

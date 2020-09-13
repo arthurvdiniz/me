@@ -90,7 +90,6 @@ export const IconWrapper = styled.button<{ isDark: boolean }>`
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     display: inline-flex;
-    transform: scale(0.708);
     margin-left: 10px;
     &:hover {
       opacity: 0.8;

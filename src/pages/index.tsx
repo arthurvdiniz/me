@@ -4,6 +4,7 @@ import Head from 'next/head'
 import DefaultLayout from '@/layouts/DefaultLayout'
 import Typography, { TypographyVariant } from '@/components/Typography'
 import Link, { LinkVariant } from '@/components/Link'
+import Highlighted from '@/components/Highlighted'
 
 import { Section } from '@/styled/pages/home'
 
@@ -20,11 +21,12 @@ export default function Home(): React.ReactElement {
           Hello!
         </Typography>
         <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
-          I am Arthur Diniz,
+          I am <Highlighted>Arthur Diniz</Highlighted>,
           <br />a Software Engineer at{' '}
           <Link variant={LinkVariant.External} href="https://klivo.com" target="_blank">
-            Klivo.
+            Klivo
           </Link>
+          .
         </Typography>
         {/* <Typography className="about-me" variant={TypographyVariant.Subtitle}>
           Focusing in learn Software Architeture
