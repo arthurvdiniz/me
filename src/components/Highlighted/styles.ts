@@ -5,7 +5,7 @@ interface TextHighlightedProps {
 }
 
 export const TextHighlighted = styled.span<TextHighlightedProps>`
-  color: ${({ theme }) => theme.colors.background};
+  color: ${({ isHighlighted, theme }) => isHighlighted ? theme.colors.background : theme.colors.primary};
   padding: 0 10px;
 
   background-image: linear-gradient(
@@ -15,5 +15,5 @@ export const TextHighlighted = styled.span<TextHighlightedProps>`
   );
   background-size: 200%;
   background-position: ${({ isHighlighted }) => (isHighlighted ? '-100%' : 0)};
-  transition: background-position ${({ theme }) => theme.transitions.easeInOutQuadLong};
+  transition: background-position ${({ theme }) => theme.transitions.easeInOutQuadLong}, color ${({ theme }) => theme.transitions.easeInOutQuadLong};
 `
