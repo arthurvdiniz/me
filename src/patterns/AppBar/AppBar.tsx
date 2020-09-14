@@ -10,7 +10,7 @@ function AppBar(): React.ReactElement {
   return (
     <Container>
       <Link href="/">
-        <a>
+        <a aria-label="Home page">
           <Logo />
         </a>
       </Link>
