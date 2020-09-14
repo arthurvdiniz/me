@@ -5,10 +5,14 @@ export enum Colors {
 }
 
 export enum FontSize {
+  textLarge = '22px',
   text = '16px',
-  textSmall = '14px',
+  textMedium = '14px',
+  textSmall = '12px',
   title = '48px',
-  titleSmall = '32px'
+  titleMedium = '40px',
+  titleSmall = '32px',
+  titleSmallest = '28px',
 }
 
 export enum Shadows {

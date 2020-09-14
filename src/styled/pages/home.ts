@@ -8,9 +8,17 @@ export const Section = styled.section`
 
   > .title {
     margin-bottom: 50px;
+
+    @media screen and (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+      margin-bottom: 20px;
+    }
   }
 
   > .subtitle {
     margin-bottom: 20px;
+
+    @media screen and (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+      margin-bottom: 10px;
+    }
   }
 `
