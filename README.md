@@ -1,28 +1,26 @@
-# TypeScript & Styled Components Next.js example
+# WIP: arthurvdiniz.me
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+<p align="left">
+    <img src="https://img.shields.io/github/languages/top/arthurvdiniz/me" />
+    <img src="https://img.shields.io/github/last-commit/arthurvdiniz/me" />
+</p>
 
-## Deploy your own
+This is my personal website for presentation purposes and experimental projects. Entirely written in [Typescript](https://www.typescriptlang.org/), [NextJS](https://nextjs.org/) and [Styled-Components](https://styled-components.com/).
 
-Deploy the example using [Vercel](https://vercel.com):
+## How to run
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-styled-components)
+Clone the repository
 
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-app
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-app
+```shell
+git clone https://github.com/arthurvdiniz/me.git && cd me
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Install dependencies and  run in development mode
 
-## Notes
+```shell
+yarn && yarn dev
+```
 
-This is an amalgamation of the 2 existing examples:
+## Author
 
-- [with-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
+[Arthur Diniz](https://arthurvdiniz.me)
