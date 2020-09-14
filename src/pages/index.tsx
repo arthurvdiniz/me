@@ -23,7 +23,7 @@ export default function Home(): React.ReactElement {
         <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
           I am <Highlighted>Arthur Diniz</Highlighted>,
           <br />a Software Engineer at{' '}
-          <Link variant={LinkVariant.External} href="https://klivo.com" target="_blank">
+          <Link variant={LinkVariant.External} href="https://klivo.com" target="_blank" rel="noreferrer">
             Klivo
           </Link>
           .
