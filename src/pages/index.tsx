@@ -29,8 +29,8 @@ export default function Home(): React.ReactElement {
           .
         </Typography>
         <Typography className="about-me" variant={TypographyVariant.Subtitle}>
-          I am focusing on learning backend concepts and web development. I try to express myself through{' '}
-          <Highlighted>photography, art and code</Highlighted> that's why I created my{' '}
+          I am focusing on learning backend concepts and web development. I try to express myself through photography,
+          art and code that's why I created my{' '}
           <LinkText variant={LinkTextVariant.Internal} href="/lab">
             laboratory
           </LinkText>{' '}
