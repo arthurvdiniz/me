@@ -1,6 +1,7 @@
 import React from 'react'
 
 import AppBar from '@/patterns/AppBar'
+import Footer from '@/patterns/Footer'
 
 import { Main } from '@/styled/Layout'
 
@@ -15,6 +16,7 @@ function DefaultLayout(props: DefaultLayoutProps): React.ReactElement {
     <Main>
       <AppBar />
       {children}
+      <Footer />
     </Main>
   )
 }

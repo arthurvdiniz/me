@@ -6,5 +6,5 @@ export const Main = styled.main`
   min-height: 100vh;
   max-width: 1220px;
   margin: 0 auto;
-  padding: 100px 50px;
+  padding: 100px 50px 75px 50px;
 `
