@@ -5,12 +5,4 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  > .title {
-    margin-bottom: 50px;
-  }
-
-  > .subtitle {
-    margin-bottom: 20px;
-  }
 `

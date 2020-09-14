@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
 import Typography, { TypographyVariant } from '@/components/Typography'
-import Link, { LinkVariant } from '@/components/Link'
+import LinkText, { LinkTextVariant } from '@/components/LinkText'
 import Highlighted from '@/components/Highlighted'
 
 import { Section } from '@/styled/pages/home'
@@ -23,14 +23,19 @@ export default function Home(): React.ReactElement {
         <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
           I am <Highlighted>Arthur Diniz</Highlighted>,
           <br />a Software Engineer at{' '}
-          <Link variant={LinkVariant.External} href="https://klivo.com" target="_blank" rel="noreferrer">
+          <LinkText variant={LinkTextVariant.External} href="https://klivo.com" target="_blank" rel="noreferrer">
             Klivo
-          </Link>
+          </LinkText>
           .
         </Typography>
-        {/* <Typography className="about-me" variant={TypographyVariant.Subtitle}>
-          Focusing in learn Software Architeture
-        </Typography> */}
+        <Typography className="about-me" variant={TypographyVariant.Subtitle}>
+          I am focusing on learning backend concepts and web development. I try to express myself through photography
+          and art that's why I created my{' '}
+          <LinkText variant={LinkTextVariant.Internal} href="/lab">
+            laboratory
+          </LinkText>{' '}
+          for experimental projects.
+        </Typography>
       </Section>
     </DefaultLayout>
   )

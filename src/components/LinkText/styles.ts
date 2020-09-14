@@ -1,15 +1,6 @@
 import styled from 'styled-components'
-import Link from 'next/link'
 
-export const Internal = styled(Link)`
-  color: ${({ theme }) => theme.colors.primary};
-  font-family: 'Lora';
-  font-size: ${({ theme }) => theme.typography.fontSize.text};
-  letter-spacing: 0.16px;
-  line-height: 24px;
-`
-
-export const External = styled.a`
+export const LinkStyled = styled.a`
   position: relative;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.primary};
