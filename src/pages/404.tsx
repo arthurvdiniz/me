@@ -4,10 +4,11 @@ import Head from 'next/head'
 import DefaultLayout from '@/layouts/DefaultLayout'
 import Typography, { TypographyVariant } from '@/components/Typography'
 import Highlighted from '@/components/Highlighted'
+import LinkText, { LinkTextVariant } from '@/components/LinkText'
 
-import { Section } from '@/styled/pages/lab'
+import { Section } from '@/styled/pages/404'
 
-export default function Home(): React.ReactElement {
+export default function NotFound(): React.ReactElement {
   return (
     <DefaultLayout>
       <Head>
@@ -20,7 +21,14 @@ export default function Home(): React.ReactElement {
           404
         </Typography>
         <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
-          <Highlighted>page not found!</Highlighted>
+          Ops... <Highlighted>page not found</Highlighted>
+        </Typography>
+        <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
+          back to{' '}
+          <LinkText variant={LinkTextVariant.Internal} href="/">
+            home
+          </LinkText>
+          .
         </Typography>
       </Section>
     </DefaultLayout>

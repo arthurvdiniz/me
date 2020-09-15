@@ -7,7 +7,7 @@ import Highlighted from '@/components/Highlighted'
 
 import { Section } from '@/styled/pages/lab'
 
-export default function Home(): React.ReactElement {
+export default function Lab(): React.ReactElement {
   return (
     <DefaultLayout>
       <Head>

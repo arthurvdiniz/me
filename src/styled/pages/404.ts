@@ -9,4 +9,8 @@ export const Section = styled.section`
   > .title {
     margin-bottom: 15px;
   }
+
+  > .subtitle {
+    margin-bottom: 5px;
+  }
 `
