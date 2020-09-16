@@ -9,25 +9,38 @@ export enum TypographyVariant {
   Span = 'span'
 }
 
-export interface TypographyProps extends React.ComponentPropsWithoutRef<'p' | 'h1' | 'h2' | 'span'> {
+export enum TypographyComponent {
+  h1 = 'h1',
+  h2 = 'h2',
+  h3 = 'h3',
+  h4 = 'h4',
+  h5 = 'h5',
+  h6 = 'h6',
+  p = 'p',
+  span = 'span'
+}
+
+export interface TypographyProps
+  extends React.ComponentPropsWithoutRef<'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'> {
   variant?: TypographyVariant
+  component?: TypographyComponent
 }
 
 const Typography = React.forwardRef(function Typography(
   props: TypographyProps,
   ref: React.Ref<HTMLParagraphElement | HTMLHeadingElement>
 ) {
-  const { variant } = props
+  const { variant, component } = props
 
   switch (variant) {
     case TypographyVariant.Title:
-      return <Title ref={ref} {...props} />
+      return <Title as={component} ref={ref} {...props} />
     case TypographyVariant.Subtitle:
-      return <Subtitle ref={ref} {...props} />
+      return <Subtitle as={component} ref={ref} {...props} />
     case TypographyVariant.Span:
-      return <Span ref={ref} {...props} />
+      return <Span as={component} ref={ref} {...props} />
     default:
-      return <Paragraph ref={ref} {...props} />
+      return <Paragraph as={component} ref={ref} {...props} />
   }
 })
 

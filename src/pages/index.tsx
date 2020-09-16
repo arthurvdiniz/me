@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-import Typography, { TypographyVariant } from '@/components/Typography'
+import Typography, { TypographyVariant, TypographyComponent } from '@/components/Typography'
 import LinkText, { LinkTextVariant } from '@/components/LinkText'
 import Highlighted from '@/components/Highlighted'
 
@@ -20,7 +20,7 @@ export default function Home(): React.ReactElement {
         <Typography className="title" variant={TypographyVariant.Title}>
           Hello!
         </Typography>
-        <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
+        <Typography className="subtitle" variant={TypographyVariant.Subtitle} component={TypographyComponent.p}>
           I am <Highlighted>Arthur Diniz</Highlighted>,
           <br />a Software Engineer at{' '}
           <LinkText variant={LinkTextVariant.External} href="https://klivo.com" target="_blank" rel="noreferrer">
@@ -28,9 +28,9 @@ export default function Home(): React.ReactElement {
           </LinkText>
           .
         </Typography>
-        <Typography className="about-me" variant={TypographyVariant.Subtitle}>
-          I am focusing on learning backend concepts and web development. I enjoy expressing myself through <Highlighted>photography,
-          art and code</Highlighted> that's why I created my{' '}
+        <Typography className="about-me" variant={TypographyVariant.Subtitle} component={TypographyComponent.p}>
+          I am focusing on learning backend concepts and web development. I enjoy expressing myself through{' '}
+          <Highlighted>photography, art and code</Highlighted> that's why I created my{' '}
           <LinkText variant={LinkTextVariant.Internal} href="/lab">
             laboratory
           </LinkText>{' '}

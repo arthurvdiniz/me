@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-import Typography, { TypographyVariant } from '@/components/Typography'
+import Typography, { TypographyVariant, TypographyComponent } from '@/components/Typography'
 import Highlighted from '@/components/Highlighted'
 import LinkText, { LinkTextVariant } from '@/components/LinkText'
 
@@ -20,10 +20,10 @@ export default function NotFound(): React.ReactElement {
         <Typography className="title" variant={TypographyVariant.Title}>
           404
         </Typography>
-        <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
+        <Typography className="subtitle" variant={TypographyVariant.Subtitle} component={TypographyComponent.p}>
           Ops... <Highlighted>page not found</Highlighted>
         </Typography>
-        <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
+        <Typography className="subtitle" variant={TypographyVariant.Subtitle} component={TypographyComponent.p}>
           back to{' '}
           <LinkText variant={LinkTextVariant.Internal} href="/">
             home
