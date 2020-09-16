@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-import Typography, { TypographyVariant, TypographyComponent } from '@/components/Typography'
+import Typography, { TypographyVariant } from '@/components/Typography'
 import Highlighted from '@/components/Highlighted'
 
 import { Section } from '@/styled/pages/lab'
@@ -19,7 +19,7 @@ export default function Lab(): React.ReactElement {
         <Typography className="title" variant={TypographyVariant.Title}>
           LAB
         </Typography>
-        <Typography className="subtitle" variant={TypographyVariant.Subtitle} component={TypographyComponent.p}>
+        <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
           <Highlighted>under construction!</Highlighted>
         </Typography>
       </Section>

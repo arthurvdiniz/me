@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface ComponentProps {
+  as?: string
+}
+
 export const Paragraph = styled.p`
   color: ${({ theme }) => theme.colors.primary};
   font-size: ${({ theme }) => theme.typography.fontSize.text};
@@ -30,7 +34,7 @@ export const Span = styled.span`
   }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h1<ComponentProps>`
   color: ${({ theme }) => theme.colors.primary};
   font-size: ${({ theme }) => theme.typography.fontSize.title};
   letter-spacing: 0px;
@@ -44,7 +48,6 @@ export const Title = styled.h1`
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: ${({ theme }) => theme.typography.fontSize.titleSmall};
   }
-
 `
 
 export const Subtitle = styled.h2`
