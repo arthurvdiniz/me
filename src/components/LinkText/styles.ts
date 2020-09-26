@@ -10,10 +10,10 @@ export const LinkStyled = styled.a`
     content: '';
     position: absolute;
     z-index: -1;
-    top: 95%;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -3px;
     transition: top ${({ theme }) => theme.transitions.cubic}, background ${({ theme }) => theme.transitions.default};
     background-color: ${({ theme }) => theme.colors.highlighted};
   }

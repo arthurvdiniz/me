@@ -10,7 +10,7 @@ export default createGlobalStyle<GlobalStyleProps>`
   * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Lora', serif;
+    font-family: 'Inconsolata', serif;
     text-rendering: optimizelegibility;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;

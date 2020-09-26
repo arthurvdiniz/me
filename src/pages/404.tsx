@@ -26,9 +26,8 @@ export default function NotFound(): React.ReactElement {
         <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
           back to{' '}
           <LinkText variant={LinkTextVariant.Internal} href="/">
-            home
+            /home
           </LinkText>
-          .
         </Typography>
       </Section>
     </DefaultLayout>
