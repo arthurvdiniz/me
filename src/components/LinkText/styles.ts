@@ -4,7 +4,7 @@ export const LinkStyled = styled.a`
   position: relative;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.primary};
-  padding: 0 5px;
+  padding: 2px 5px;
 
   &::after {
     content: '';
