@@ -1,15 +1,7 @@
 import styled from 'styled-components'
+import { animated } from 'react-spring'
 
-interface ContentProps {
-  positionX: string
-  positionY: string
-}
-
-export const Content = styled.div.attrs((props: ContentProps) => ({
-  style: {
-    transform: `rotateX(${props.positionX}deg) rotateY(${props.positionY}deg)`
-  }
-}))`
+export const Animated = styled(animated.div)`
   width: fit-content;
-  transition: transform ${({ theme }) => theme.transitions.easeInOutQuad};
+  will-change: transform;
 `

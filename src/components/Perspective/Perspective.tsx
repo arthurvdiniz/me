@@ -1,10 +1,10 @@
 import React from 'react'
 
-import useMousePosition from '@/hooks/useMousePosition'
+import { useSpring } from 'react-spring'
 
-import { Content } from './styles'
-
-// TODO
+import getXYS from './utils/getXYS'
+import getTransform from './utils/getTransform'
+import { Animated } from './styles'
 
 interface PerspectiveProps {
   children: React.ReactNode
@@ -13,23 +13,18 @@ interface PerspectiveProps {
 function Perspective(props: PerspectiveProps): React.ReactElement {
   const { children } = props
 
-  const ref = React.useRef(null)
-  const { x, y, bind } = useMousePosition()
-  const [positionX, setPositionX] = React.useState('0')
-  const [positionY, setPositionY] = React.useState('0')
-
-  React.useEffect(() => {
-    if (ref.current) {
-      setPositionX(((y / ref.current.offsetHeight) * 50).toFixed(2))
-      setPositionY(((x / ref.current.offsetWidth) * 50).toFixed(2))
-    }
-  }, [x, y, ref])
+  const [sprops, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
   return (
-    <Content positionX={positionX} positionY={positionY} ref={ref} {...bind}>
+    <Animated
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: getXYS(x, y) })}
+      onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      // @ts-ignore
+      style={{ transform: sprops.xys.interpolate(getTransform) }}
+    >
       {children}
-    </Content>
+    </Animated>
   )
 }
 
-export default Perspective
+export default React.memo(Perspective)

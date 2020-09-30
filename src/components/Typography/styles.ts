@@ -4,6 +4,9 @@ interface ComponentProps {
   as?: string
 }
 
+// TODO: change font-size to use clamp()
+// ref: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
 export const Paragraph = styled.p`
   color: ${({ theme }) => theme.colors.primary};
   font-size: ${({ theme }) => theme.typography.fontSize.text};
@@ -54,7 +57,7 @@ export const Subtitle = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
   font-size: ${({ theme }) => theme.typography.fontSize.titleSmall};
   letter-spacing: 0px;
-  line-height: 40px;
+  line-height: 44px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: ${({ theme }) => theme.typography.fontSize.titleSmallest};
