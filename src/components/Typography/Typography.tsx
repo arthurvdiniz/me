@@ -9,7 +9,8 @@ export enum TypographyVariant {
   Span = 'span'
 }
 
-export interface TypographyProps extends React.ComponentPropsWithoutRef<'p' | 'h1' | 'h2' | 'span'> {
+export interface TypographyProps
+  extends React.ComponentPropsWithoutRef<'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'> {
   variant?: TypographyVariant
 }
 

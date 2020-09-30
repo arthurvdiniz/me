@@ -18,7 +18,7 @@ export default function Home(): React.ReactElement {
       </Head>
       <Section>
         <Typography className="title" variant={TypographyVariant.Title}>
-          Hello!
+          Hello! 🤙
         </Typography>
         <Typography className="subtitle" variant={TypographyVariant.Subtitle}>
           I am <Highlighted>Arthur Diniz</Highlighted>,
@@ -29,10 +29,10 @@ export default function Home(): React.ReactElement {
           .
         </Typography>
         <Typography className="about-me" variant={TypographyVariant.Subtitle}>
-          I am focusing on learning backend concepts and web development. I enjoy expressing myself through <Highlighted>photography,
-          art and code</Highlighted> that's why I created my{' '}
+          I am focusing on learning backend concepts and web development. I enjoy expressing myself through{' '}
+          <Highlighted>photography, art and code</Highlighted> that's why I created my{' '}
           <LinkText variant={LinkTextVariant.Internal} href="/lab">
-            laboratory
+            /laboratory
           </LinkText>{' '}
           for experimental projects.
         </Typography>
