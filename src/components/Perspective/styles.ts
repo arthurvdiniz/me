@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { animated } from 'react-spring'
+import { motion } from 'framer-motion'
 
-export const Animated = styled(animated.div)`
+export const Animated = styled(motion.div)`
   width: fit-content;
   will-change: transform;
 `
