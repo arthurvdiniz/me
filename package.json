@@ -11,12 +11,12 @@
     "storybook": "start-storybook -s ./public -p 9001"
   },
   "dependencies": {
+    "framer-motion": "^2.7.6",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "^3.11.0",
     "react-responsive": "^8.1.0",
-    "react-spring": "^8.0.27",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.1.1",
     "use-dark-mode": "^2.3.1"
